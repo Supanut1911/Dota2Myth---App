@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		17338233244DB63B0058C8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17338231244DB63B0058C8D6 /* Main.storyboard */; };
 		17338235244DB6400058C8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17338234244DB6400058C8D6 /* Assets.xcassets */; };
 		17338238244DB6400058C8D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17338236244DB6400058C8D6 /* LaunchScreen.storyboard */; };
+		17338243244DB7760058C8D6 /* DotaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17338242244DB7760058C8D6 /* DotaManager.swift */; };
+		17338245244DB77F0058C8D6 /* DotaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17338244244DB77F0058C8D6 /* DotaData.swift */; };
 		3D2453F5C904494CAEDAAE72 /* Pods_Dota2Myth_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A600B7F13A8F7A2552FAAD /* Pods_Dota2Myth_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		17338234244DB6400058C8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17338237244DB6400058C8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17338239244DB6400058C8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17338242244DB7760058C8D6 /* DotaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaManager.swift; sourceTree = "<group>"; };
+		17338244244DB77F0058C8D6 /* DotaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaData.swift; sourceTree = "<group>"; };
 		5249674FC1ED7C95345F56C8 /* Pods-Dota2Myth App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Myth App.debug.xcconfig"; path = "Target Support Files/Pods-Dota2Myth App/Pods-Dota2Myth App.debug.xcconfig"; sourceTree = "<group>"; };
 		74A600B7F13A8F7A2552FAAD /* Pods_Dota2Myth_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2Myth_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,15 +67,41 @@
 		1733822A244DB63B0058C8D6 /* Dota2Myth App */ = {
 			isa = PBXGroup;
 			children = (
+				17338241244DB7600058C8D6 /* Contorller */,
+				17338240244DB7590058C8D6 /* Model */,
+				1733823F244DB74C0058C8D6 /* Manager */,
 				1733822B244DB63B0058C8D6 /* AppDelegate.swift */,
 				1733822D244DB63B0058C8D6 /* SceneDelegate.swift */,
-				1733822F244DB63B0058C8D6 /* ViewController.swift */,
 				17338231244DB63B0058C8D6 /* Main.storyboard */,
 				17338234244DB6400058C8D6 /* Assets.xcassets */,
 				17338236244DB6400058C8D6 /* LaunchScreen.storyboard */,
 				17338239244DB6400058C8D6 /* Info.plist */,
 			);
 			path = "Dota2Myth App";
+			sourceTree = "<group>";
+		};
+		1733823F244DB74C0058C8D6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				17338242244DB7760058C8D6 /* DotaManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		17338240244DB7590058C8D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17338244244DB77F0058C8D6 /* DotaData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17338241244DB7600058C8D6 /* Contorller */ = {
+			isa = PBXGroup;
+			children = (
+				1733822F244DB63B0058C8D6 /* ViewController.swift */,
+			);
+			path = Contorller;
 			sourceTree = "<group>";
 		};
 		A20C9487970CCE8B7E2923A2 /* Frameworks */ = {
@@ -88,7 +118,6 @@
 				5249674FC1ED7C95345F56C8 /* Pods-Dota2Myth App.debug.xcconfig */,
 				0E0449AFF68D2242CE5E30F6 /* Pods-Dota2Myth App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,7 +238,9 @@
 			files = (
 				17338230244DB63B0058C8D6 /* ViewController.swift in Sources */,
 				1733822C244DB63B0058C8D6 /* AppDelegate.swift in Sources */,
+				17338245244DB77F0058C8D6 /* DotaData.swift in Sources */,
 				1733822E244DB63B0058C8D6 /* SceneDelegate.swift in Sources */,
+				17338243244DB7760058C8D6 /* DotaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
