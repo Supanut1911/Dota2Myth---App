@@ -13,15 +13,21 @@ struct DotaManager {
     let path = "https://api.opendota.com/api/heroStats"
     
 //    func fetchDotaInformation(completion: @escaping (Result<DotaModel,Error>))->Void {
-    func fetchDotaInformation() {
+    func fetchDotaInformation(completion:@escaping (Result<[DotaData], Error>)->Void) {
         let urlString = String(path)
         
         AF.request(urlString).responseDecodable(of: [DotaData].self, queue: .main, decoder: JSONDecoder()) { (response) in
             switch response.result {
             case .success(let dotaData):
-                print(dotaData)
+//                let model = dotaData {
+//                    completion(.success(model))
+//                }
+                
+                completion(.success(dotaData))
+          
+                
             case .failure(let error):
-                print(error.localizedDescription)
+                completion(.failure(error))
             }
         }
     }

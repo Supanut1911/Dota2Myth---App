@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172FF43B244EA5FC00F5C7A8 /* HeroDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172FF43A244EA5FC00F5C7A8 /* HeroDetailVC.swift */; };
 		1733822C244DB63B0058C8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733822B244DB63B0058C8D6 /* AppDelegate.swift */; };
 		1733822E244DB63B0058C8D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733822D244DB63B0058C8D6 /* SceneDelegate.swift */; };
 		17338230244DB63B0058C8D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733822F244DB63B0058C8D6 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0E0449AFF68D2242CE5E30F6 /* Pods-Dota2Myth App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Myth App.release.xcconfig"; path = "Target Support Files/Pods-Dota2Myth App/Pods-Dota2Myth App.release.xcconfig"; sourceTree = "<group>"; };
+		172FF43A244EA5FC00F5C7A8 /* HeroDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailVC.swift; sourceTree = "<group>"; };
 		17338228244DB63B0058C8D6 /* Dota2Myth App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dota2Myth App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1733822B244DB63B0058C8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1733822D244DB63B0058C8D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				1733822F244DB63B0058C8D6 /* ViewController.swift */,
+				172FF43A244EA5FC00F5C7A8 /* HeroDetailVC.swift */,
 			);
 			path = Contorller;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				17338230244DB63B0058C8D6 /* ViewController.swift in Sources */,
 				1733822C244DB63B0058C8D6 /* AppDelegate.swift in Sources */,
+				172FF43B244EA5FC00F5C7A8 /* HeroDetailVC.swift in Sources */,
 				17338245244DB77F0058C8D6 /* DotaData.swift in Sources */,
 				1733822E244DB63B0058C8D6 /* SceneDelegate.swift in Sources */,
 				17338243244DB7760058C8D6 /* DotaManager.swift in Sources */,
